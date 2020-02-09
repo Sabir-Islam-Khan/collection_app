@@ -3,11 +3,11 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 import '../widgets/createTransactionCard.dart';
+import '../widgets/transactionList.dart';
 
 class StoreDetails extends StatefulWidget {
   final DocumentSnapshot doc;
   final db = Firestore.instance;
-
   StoreDetails(this.doc);
 
   @override
@@ -54,6 +54,7 @@ class StoreDetailsState extends State<StoreDetails> {
               ),
             ),
             CreateTransactionCard(widget.doc),
+            TransactionList(widget.doc),
           ],
         ),
       ),

@@ -32,8 +32,6 @@ class CreateStoreCard extends StatefulWidget {
       'name': '${nameController.value.text}',
       'number': '${numberController.value.text}',
       'address': '${addressController.value.text}',
-      'given': null,
-      'payment': null,
     });
 
     setState(() {
